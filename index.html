@@ -1,11 +1,372 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Aggelos Billis</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 50px 20px;
+            background: #fff;
+            color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 1.65;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 500;
+            margin: 0 0 25px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 0 0 16px;
+        }
+
+        a {
+            color: #1772d0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .profile {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        .profile-photo {
+            width: 175px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        .email {
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            margin-top: 16px;
+        }
+
+        .publication {
+            display: flex;
+            align-items: flex-start;
+            gap: 22px;
+            margin-bottom: 27px;
+        }
+
+        .venue {
+            width: 95px;
+            min-width: 95px;
+            padding: 7px 4px;
+            background: #edf1f6;
+            color: #475b7e;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .pub-content {
+            flex: 1;
+        }
+
+        .pub-title {
+            font-weight: 600;
+            color: #222;
+        }
+
+        .pub-authors {
+            font-size: 14px;
+        }
+
+        .pub-description {
+            font-size: 14px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .pub-links {
+            font-size: 14px;
+            margin-top: 3px;
+        }
+
+        footer {
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            margin-top: 50px;
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 25px 18px;
+            }
+
+            .profile {
+                flex-direction: column-reverse;
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 170px;
+            }
+
+            .publication {
+                gap: 12px;
+            }
+
+            .venue {
+                width: 65px;
+                min-width: 65px;
+                font-size: 11px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+
+<div class="container">
+
+    <h1>Aggelos Billis</h1>
+
+    <div class="profile">
+
+        <div class="profile-text">
+
+            <p class="email">
+                <a href="mailto:your.email@example.com">
+                    your.email@example.com
+                </a>
+            </p>
+
+            <p>
+                I am an undergraduate student in Electrical
+                and Computer Engineering at
+                <a href="https://www.auth.gr/">
+                    Aristotle University of Thessaloniki
+                </a>.
+                My research interests include deep learning,
+                representation learning, efficient neural
+                networks, and trustworthy artificial intelligence.
+            </p>
+
+            <p>
+                Previously, I worked on various research
+                projects involving machine learning,
+                optimization, and signal processing.
+                I am particularly interested in understanding
+                how neural networks learn representations
+                and how modern AI systems can become
+                more efficient, reliable, and interpretable.
+            </p>
+
+            <p>
+                Outside of research, I enjoy exploring
+                new ideas, collaborating with interesting
+                people, and working on challenging
+                technical projects.
+            </p>
+
+            <div class="social-links">
+                <a href="https://github.com/">GitHub</a> /
+                <a href="https://www.linkedin.com/">LinkedIn</a> /
+                <a href="#">CV</a>
+            </div>
+
+        </div>
+
+        <img
+            class="profile-photo"
+            src="profile.jpg"
+            alt="Profile photograph"
+        >
+
+    </div>
+
+    <h2>publications</h2>
+
+    <!-- SAMPLE PUBLICATION 1 -->
+
+    <div class="publication">
+
+        <div class="venue">NeurIPS</div>
+
+        <div class="pub-content">
+
+            <div class="pub-title">
+                Learning Efficient Representations
+                in Deep Neural Networks
+            </div>
+
+            <div class="pub-authors">
+                <strong>Aggelos Billis</strong>,
+                Jane Doe, John Smith
+            </div>
+
+            <div class="pub-description">
+                Example Conference on Neural
+                Information Processing Systems, 2026
+            </div>
+
+            <div class="pub-links">
+                <a href="#">paper</a> /
+                <a href="#">code</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SAMPLE PUBLICATION 2 -->
+
+    <div class="publication">
+
+        <div class="venue">ICML</div>
+
+        <div class="pub-content">
+
+            <div class="pub-title">
+                Towards Scalable and Robust
+                Machine Learning
+            </div>
+
+            <div class="pub-authors">
+                <strong>Aggelos Billis</strong>,
+                Alice Johnson, Bob Williams
+            </div>
+
+            <div class="pub-description">
+                Example International Conference
+                on Machine Learning, 2025
+            </div>
+
+            <div class="pub-links">
+                <a href="#">paper</a> /
+                <a href="#">code</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SAMPLE PUBLICATION 3 -->
+
+    <div class="publication">
+
+        <div class="venue">Preprint</div>
+
+        <div class="pub-content">
+
+            <div class="pub-title">
+                Investigating Alternative Learning
+                Algorithms for Neural Networks
+            </div>
+
+            <div class="pub-authors">
+                <strong>Aggelos Billis</strong>,
+                Researcher One, Researcher Two
+            </div>
+
+            <div class="pub-description">
+                Example Preprint, 2026
+            </div>
+
+            <div class="pub-links">
+                <a href="#">arXiv</a> /
+                <a href="#">code</a>
+            </div>
+
+        </div>
+    </div>
+
+    <h2>research projects</h2>
+
+    <div class="publication">
+
+        <div class="venue">Project</div>
+
+        <div class="pub-content">
+
+            <div class="pub-title">
+                Knowledge Distillation for
+                Efficient Deep Learning
+            </div>
+
+            <div class="pub-authors">
+                An example research project
+                exploring teacher-student learning,
+                knowledge transfer, and neural
+                network compression.
+            </div>
+
+            <div class="pub-links">
+                <a href="#">GitHub</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="publication">
+
+        <div class="venue">Project</div>
+
+        <div class="pub-content">
+
+            <div class="pub-title">
+                Computer Vision for Autonomous Driving
+            </div>
+
+            <div class="pub-authors">
+                An example project focusing on
+                visual perception, lane detection,
+                and real-time decision making
+                for autonomous systems.
+            </div>
+
+            <div class="pub-links">
+                <a href="#">GitHub</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        Last updated: October 2026
+    </footer>
+
+</div>
+
 </body>
 </html>
